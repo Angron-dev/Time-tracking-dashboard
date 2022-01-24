@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+  <div class="profile-card">
+
+    <div class="profile">
+      <img src="images/image-jeremy.png" alt="profile-img">
+      <span class="profile-name">
+        <h5>Report for</h5>
+        <h2 class="name">Jeremy Robson</h2>
+      </span>
+    </div>
+
+    <div class="buttons">
+      <span class="button" id="daily-btn">Daily</span> 
+      <span class="button" id="weekly-btn">Weekly</span> 
+      <span class="button" id="monthly-btn">Monthly</span> 
+    </div>
+  </div>
+
+  <!-- WORK-->
+  <div class="card work-card">
+    <img src="images/icon-work.svg" alt="icon-work">
+    <div class="card-inside">
+
+      <span class="card-title">
+        <h3 class="title">Work</h3> 
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/>
+        </svg>
+      </span>
+
+      <span class="time-card">
+        <h4 class="hours">5hrs</h4> 
+        <h4 class="previous-hours">Last Day - 7hrs </h4> 
+      </span>
+
+    </div>
+  </div>
+
+  <!-- PLAY-->
+  <div class="card play-card">
+    <img src="images/icon-play.svg" alt="icon-play">
+    <div class="card-inside">
+
+      <span class="card-title">
+        <h3 class="title">Play</h3> 
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+      </span>
+
+      <span class="time-card">
+        <h4 class="hours" >1hr</h4> 
+        <h4 class="previous-hours">Last Day - 2hrs</h4> 
+      </span>
+    </div>
+  </div>
+
+  <!-- STUDY-->
+  <div class="card study-card">
+    <img src="images/icon-study.svg" alt="icon-study">
+    <div class="card-inside">
+
+      <span class="card-title">
+        <h3 class="title">Study</h3> 
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+      </span>
+
+      <span class="time-card">
+        <h4 class="hours" >0hrs</h4> 
+        <h4 class="previous-hours">Last Day - 1hr</h4> 
+      </span>
+  
+    </div>
+  </div>
+
+  <!-- EXERCISE -->
+  <div class="card exercise-card">
+    <img src="images/icon-exercise.svg" alt="icon-exercise">
+    <div class="card-inside">
+
+      <span class="card-title">
+        <h3 class="title">Exercise</h3> 
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+      </span>
+     
+      <span class="time-card">
+        <h4 class="hours"> 1hr</h4>
+        <h4 class="previous-hours"> Last Day - 1hr </h4>
+      </span>
+  
+    </div>
+  </div>
+
+  <!-- SOCIAL-->
+  <div class="card social-card">
+    <img src="images/icon-social.svg" alt="icon-social">
+    <div class="card-inside">
+
+      <span class="card-title">
+        <h3 class="title">Social</h3> 
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+      </span>
+
+      <span class="time-card">
+        <h4 class="hours">1hr</h4>  
+        <h4 class="previous-hours">Last Day - 3hrs</h4> 
+      </span>
+  
+    </div>
+  </div>
+
+  <!-- SELF CARE-->
+  <div class="card self-care-card">
+    <img src="images/icon-self-care.svg" alt="icon-self-care">
+    <div class="card-inside">
+      <span class="card-title">
+        <h3 class="title">Self Care</h3> 
+        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+      </span>
+    
+      <span class="time-card">
+        <h4 class="hours">0hrs</h4>
+        <h4 class="previous-hours">Last Day - 1hr</h4>
+      </span>
+
+    </div>
+  </div>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
