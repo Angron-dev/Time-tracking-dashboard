@@ -1,4 +1,4 @@
-[Demo wersji finanlnej](https://angron-dev.github.io/Time-tracking-dashboard/)
+[Demo wersji finalnej](https://angron-dev.github.io/Time-tracking-dashboard/)
 
 [Link do wyzwania](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)
 
